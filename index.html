@@ -1,211 +1,210 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/theme/custom.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-        <link rel="stylesheet" href="css/theme/custom.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal" style="background-color: #fff;">
-			<div class="slides" >
-                    <section data-background-video="bgm.mp4" data-background-video-loop  data-background-video-muted style="text-align: left;">
-<h2 style="color: white">Python Programming</h2>
-<h5 style="color: white">Lecture 1 Introduction</h5>
-    				</section>
-
-    			<section>
-                    <section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.1 Course Intro</h2>
-<ul>
-    <li>This is a basic course for Python programming.</li>
-    <li>“Life is short, you need Python.”<p>by Bruce Eckel, ANSI C++ Comitee member</p></li>
-</ul>
-    				</section>
-<section>
-	<div><img data-src="Python.png" style="height: 500pt" ></div>
-	
-</section>				
-                    <section>
-<ul>
-    <li class="fragment">什么是计算机“语言”？</li>
-    <li class="fragment">什么是编程？为什么要编程？</li>
-    <li class="fragment">为什么要数据分析？来源，精细化</li>
-    <li class="fragment">有很多程序设计语言,比如C，Java，Basic等等</li>
-    <li class="fragment">为什么要学Python？
-        <ul>
-            <li class="fragment">原因一：高级 （简单）</li>
-            <li class="fragment">原因二：普及</li>
-            <li class="fragment">原因三：强大</li>
-        </ul></li>
-</ul>
-                    </section>
-                    <section>
-                 TIOBE排行榜: 程序语言的热门程度   	
-       <div><img data-src="Ranking.png" style="height: 300pt" ></div>
-                    </section>
-    				<section>
-<h3>这门课主要涉及3个板块</h3>
-<ul>
-    <li class="fragment">基本知识</li>
-    <li class="fragment">简单的数据分析</li>
-    <li class="fragment">算法，数据结构，其他内容</li>
-</ul>
-
-    				</section>
-    				<section>
-<h3>课程要求</h3>  
-<ol>
-    <li>每两周一次作业（3%*8=24%）</li>
-    <li>案例设计 （6%）</li>
-    <li>期末考试 （60%）</li>
-    <li>出勤率 (10%)，课堂参与（Bonus）</li>
-    <li>答疑时间，网上论坛github</li>
-    <li>联系方式
-        <ul>
-            <li>邮箱： wang.lu@mail.shufe.edu.cn</li>
-            <li>办公室：国际工商管理学院412室</li>
-        </ul></li>
-</ol>
-
-    				</section>
-    				<section>
-<h3>主要教材</h3>
-<div id="leftc"><img data-src="textbook4.jpg" style="height: 350pt" ></div><div id="rightc"><img data-src="textbook1.jpg" style="height: 350pt"></div>
-    				</section>
-    				<section>
-<h3>参考教材</h3>
-<div id="leftc"><img data-src="textbook3.jpg" style="height: 350pt" ></div><div id="rightc"><img data-src="textbook2.jpg" style="height: 350pt"></div>
-    				</section>
-    				<section>
-<h3>课件从哪里获取？</h3>
-<ul>
-     <li>我的网站：<a href="https://wangwanglulu.coding.me">wangwanglulu.coding.me</a></li>
-     <li>如果你一定要Pdf文件：在网址末尾加上?print-pdf，然后ctrl+p</li>
-</ul>                        
-    				</section>
-    			</section>
-    			<section>
-                    <section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.2 Python Intro</h2>
-<ul>
-    <li>Python的简史，特色和安装</li>
-</ul>
-                    </section>
-					<section style="text-align: left">
-<h3>Python历史</h3>                        
-<p>Python的创始人为吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。之所以选中Python作为程序的名字，是因为他是BBC电视剧——蒙提·派森的飞行马戏团（Monty Python's Flying Circus）的爱好者。</p>
-<p>出自Wikipedia的<a href="https://zh.wikipedia.org/wiki/Python#.E6.AD.B7.E5.8F.B2">Python</a></p> 	
-    				</section>
-    				<section style="text-align: left;">
-<h3>Python的特色</h3>
-<p>Python的设计哲学是“优雅”，“明确”，“简单”。Python开发者的哲学是“用一种方法，最好是只有一种方法来做一件事”。</p>
-<p>出自Wikipedia的<a href="https://zh.wikipedia.org/wiki/Python#.E6.AD.B7.E5.8F.B2">Python</a></p> 	
-    				</section>
-    				<section>
-<h3>废话不多说，上手试一下 </h3>                        	
-    				</section>			 
-    				<section>
-<h3>Python的安装</h3>
-<ul>
-    <li>请使用Python 3.x (很多教材是2.x版本)</li>
-    <li><a href="https://www.anaconda.com/download/">Anaconda</a>，两种模式</li>
-    <li class="fragment">实际演示：第一个Python程序<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+<body>
+    <div class="reveal" style="background-color: #fff;">
+        <div class="slides">
+            <section data-background-video="bgm.mp4" data-background-video-loop data-background-video-muted style="text-align: left;">
+                <h2 style="color: white">Python Programming</h2>
+                <h5 style="color: white">Lecture 1 Introduction</h5>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.1 Course Intro</h2>
+                    <ul>
+                        <li>This is a basic course for Python programming.</li>
+                        <li>“Life is short, you need Python.”
+                            <p>by Bruce Eckel, ANSI C++ Comitee member</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div><img data-src="Python.png" style="height: 500pt"></div>
+                </section>
+                <section>
+                    <ul>
+                        <li class="fragment">什么是计算机“语言”？</li>
+                        <li class="fragment">什么是编程？为什么要编程？</li>
+                        <li class="fragment">为什么要数据分析？来源，精细化</li>
+                        <li class="fragment">有很多程序设计语言,比如C，Java，Basic等等</li>
+                        <li class="fragment">为什么要学Python？
+                            <ul>
+                                <li class="fragment">原因一：高级 （简单）</li>
+                                <li class="fragment">原因二：普及</li>
+                                <li class="fragment">原因三：强大</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    TIOBE排行榜: 程序语言的热门程度
+                    <div><img data-src="Ranking.png" style="height: 300pt"></div>
+                </section>
+                <section>
+                    <h3>这门课主要涉及3个板块</h3>
+                    <ul>
+                        <li class="fragment">基本知识</li>
+                        <li class="fragment">简单的数据分析</li>
+                        <li class="fragment">算法，数据结构，其他内容</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>课程要求</h3>
+                    <ol>
+                        <li>每两周一次作业（3%*8=24%）</li>
+                        <li>案例设计 （6%）</li>
+                        <li>期末考试 （60%）</li>
+                        <li>出勤率 (10%)，课堂参与（Bonus）</li>
+                        <li>答疑时间，网上论坛github</li>
+                        <li>联系方式
+                            <ul>
+                                <li>邮箱： wang.lu@mail.shufe.edu.cn</li>
+                                <li>办公室：国际工商管理学院412室</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>主要教材</h3>
+                    <div id="leftc"><img data-src="textbook4.jpg" style="height: 350pt"></div>
+                    <div id="rightc"><img data-src="textbook1.jpg" style="height: 350pt"></div>
+                </section>
+                <section>
+                    <h3>参考教材</h3>
+                    <div id="leftc"><img data-src="textbook3.jpg" style="height: 350pt"></div>
+                    <div id="rightc"><img data-src="textbook2.jpg" style="height: 350pt"></div>
+                </section>
+                <section>
+                    <h3>课件从哪里获取？</h3>
+                    <ul>
+                        <li>我的网站：<a href="https://wangwanglulu.coding.me">wangwanglulu.coding.me</a></li>
+                        <li>如果你一定要Pdf文件：在网址末尾加上?print-pdf，然后ctrl+p</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.2 Python Intro</h2>
+                    <ul>
+                        <li>Python的简史，特色和安装</li>
+                    </ul>
+                </section>
+                <section style="text-align: left">
+                    <h3>Python历史</h3>
+                    <p>Python的创始人为吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。之所以选中Python作为程序的名字，是因为他是BBC电视剧——蒙提·派森的飞行马戏团（Monty Python's Flying Circus）的爱好者。</p>
+                    <p>出自Wikipedia的<a href="https://zh.wikipedia.org/wiki/Python#.E6.AD.B7.E5.8F.B2">Python</a></p>
+                </section>
+                <section style="text-align: left;">
+                    <h3>Python的特色</h3>
+                    <p>Python的设计哲学是“优雅”，“明确”，“简单”。Python开发者的哲学是“用一种方法，最好是只有一种方法来做一件事”。</p>
+                    <p>出自Wikipedia的<a href="https://zh.wikipedia.org/wiki/Python#.E6.AD.B7.E5.8F.B2">Python</a></p>
+                </section>
+                <section>
+                    <h3>废话不多说，上手试一下 </h3>
+                </section>
+                <section>
+                    <h3>Python的安装</h3>
+                    <ul>
+                        <li>请使用Python 3.x (很多教材是2.x版本)</li>
+                        <li><a href="https://www.anaconda.com/download/">Anaconda</a>，两种模式</li>
+                        <li class="fragment">实际演示：第一个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 print("Hello, world!")
             </code></pre></li>
-     <li class="fragment">第二个Python程序<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                        <li class="fragment">第二个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 import antigravity
             </code></pre></li>
-            <li class="fragment">第三个Python程序<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                        <li class="fragment">第三个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 import this
             </code></pre></li>
-</ul>
-                    </section>
-    			</section>
-    			<section>
-					<section data-background="#2980b9" style="color: white">
-<h2>1.3 程序设计的一些准则</h2>
-<ul>
-    <li>怎么把Python学好？</li>
-</ul>
-    				</section>
-    				<section>
-<h3>一些建议</h3>
-<ol>
-    <li>初学者要勤写注释</li>
-    <li>遇到困难，自己查资料找办法解决问题</li>
-    <li>搞清楚需求，解决问题最重要</li>
-    <li>尽量写容易看明白的代码，尽量写少的代码</li>
-    <li>不要复制粘贴，一个字一个字的敲</li>
-</ol>
-    				</section>
-    				<section>
-<h3 >注意几点</h3>
-<ol >
-    <li>不要沉迷炫技</li>
-    <li>初学者不用太在意速度</li>
-    <li>不要参与网上无意义的争论</li>
-    <li>不要高估自己写的代码</li>
-</ol>
-    				</section>
-                    <section>
-<h3>最后请各位记住一点。。。</h3>                        
-                    </section>
-                    <section>
-<ul>
-    <li>编程终究只是“术”，是解决问题的工具</li>
-    <li>这是你必须掌握的技巧，不是你追求的终极目标</li>
-    <li>你的思考和创造力是最重要的</li>
-</ul>
-                    </section>
-                    <section>
-<h3>还有一点很遗憾。。。</h3>
-<h3 class="fragment">即使学会了这门课，你还是不会“修电脑”。</h3>                        
-                    </section>    				
-    			</section>
-<section>
-	<section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.4 Values</h2>
-                    </section>
-<section>
-<h3>Three types of values</h3>
-<ul>
-	<li>Integer</li>
-	<ul>
-		<li>e.g., $1,2,15,-10$</li>
-	</ul>
-	<li>Float</li>
-	<ul>
-		<li>numbers with decimal point, e.g., $1.2, -3.8$.</li>
-		<li>for large or small numbers, </li>
-		<li>$5.91\times10^{10}=5.91e10$, $0.00233=2.33e-3$.</li>
-	</ul>
-	<li>String</li>
-	<ul>
-		<li>e.g., 'happy'</li>
-	</ul>
-</ul>
-
-</section>
-<section>
-<p>Python can tell you what type a value has.</p>	
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2>1.3 程序设计的一些准则</h2>
+                    <ul>
+                        <li>怎么把Python学好？</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>一些建议</h3>
+                    <ol>
+                        <li>初学者要勤写注释</li>
+                        <li>遇到困难，自己查资料找办法解决问题</li>
+                        <li>搞清楚需求，解决问题最重要</li>
+                        <li>尽量写容易看明白的代码，尽量写少的代码</li>
+                        <li>不要复制粘贴，一个字一个字的敲</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>注意几点</h3>
+                    <ol>
+                        <li>不要沉迷炫技</li>
+                        <li>初学者不用太在意速度</li>
+                        <li>不要参与网上无意义的争论</li>
+                        <li>不要高估自己写的代码</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>最后请各位记住一点。。。</h3>
+                </section>
+                <section>
+                    <ul>
+                        <li>编程终究只是“术”，是解决问题的工具</li>
+                        <li>这是你必须掌握的技巧，不是你追求的终极目标</li>
+                        <li>你的思考和创造力是最重要的</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>还有一点很遗憾。。。</h3>
+                    <h3 class="fragment">即使学会了这门课，你还是不会“修电脑”。</h3>
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.4 Values</h2>
+                </section>
+                <section>
+                    <h3>Three types of values</h3>
+                    <ul>
+                        <li>Integer</li>
+                        <ul>
+                            <li>e.g., $1,2,15,-10$</li>
+                        </ul>
+                        <li>Float</li>
+                        <ul>
+                            <li>numbers with decimal point, e.g., $1.2, -3.8$.</li>
+                            <li>for large or small numbers, </li>
+                            <li>$5.91\times10^{10}=5.91e10$, $0.00233=2.33e-3$.</li>
+                        </ul>
+                        <li>String</li>
+                        <ul>
+                            <li>e.g., 'happy'</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <p>Python can tell you what type a value has.</p>
+                    <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> type(4)
 int
 
@@ -215,112 +214,107 @@ str
 >>> type(3.2)
 float
 </code></pre>
-<div class="fragment">
-<b>Note: If numbers are in quotation marks, they are strings.</b>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <b>Note: If numbers are in quotation marks, they are strings.</b>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> type('17')
 str
 
 >>> type('3.2')
 str
-</code></pre>	
-
-</div>
-
-</section>
-<section>
-	<h3>Escape string</h3>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+</code></pre>
+                    </div>
+                </section>
+                <section>
+                    <h3>Escape string</h3>
+                    <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('happy')
 happy
 </code></pre>
-<div class="fragment">
-	<p>If we want to print the single quotation marks?</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <p>If we want to print the single quotation marks?</p>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print("'happy'")
 'happy'
 </code></pre>
-</div>
-
-<div class="fragment">
-	<p>If we want to print the double quotation marks?</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    </div>
+                    <div class="fragment">
+                        <p>If we want to print the double quotation marks?</p>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('\"happy\"')
 "happy"
 </code></pre>
-</div>
-
-
-
-<div class="fragment">
-	<p>If we want to print the slash?</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    </div>
+                    <div class="fragment">
+                        <p>If we want to print the slash?</p>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('\\happy\\')
 \happy\
 </code></pre>
-</div>
-
-
-</section>
-
-<section>
-
-<p>If we want to print the double slashes?</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    </div>
+                </section>
+                <section>
+                    <p>If we want to print the double slashes?</p>
+                    <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print(r'\\happy\\')
 \\happy\\
 </code></pre>
-
-<div class="fragment">
-	<p>Line break</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <p>Line break</p>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('I\'m learning\nPython.')
 I'm learning
 Python.
 </code></pre>
-</div>
-
-
-<div class="fragment"><p>Tab</p>
-<pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    </div>
+                    <div class="fragment">
+                        <p>Tab</p>
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('I\'m learning\tPython.')
 I'm learning	Python.
 </code></pre></div>
-<div class="fragment"><pre style="font-size: 0.77em"><code class="hljs" data-trim contenteditable >
+                    <div class="fragment"><pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('\\\n\\')
 >>> print('\\\t\\')
 >>> print(r'\\\t\\')
 </code></pre></div>
-
-</section>
-</section>
-    <section>
-<section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.5 Variables</h2>
-</section>
-<section>
-	<ul>
-		<li><p>A variable is a name that refers to a value.</p></li>
-		<li><p class="fragment">An assignment statement creates new variables and gives them values.</p></li>
-		<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.5 Variables</h2>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <p>A variable is a name that refers to a value.</p>
+                        </li>
+                        <li>
+                            <p class="fragment">An assignment statement creates new variables and gives them values.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> message = 'And now for something completely different'
 >>> n = 17
 >>> pi = 3.1415926535897931
 </code></pre>
-		</div>
-		<li><p class="fragment">To display the value of a variable, you can use a print statement.</p></li>
-		<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        </div>
+                        <li>
+                            <p class="fragment">To display the value of a variable, you can use a print statement.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> print(n)
 17
 >>> print(pi)
 3.141592653589793
 </code></pre>
-		</div>
-<li><p class="fragment">The type of a variable is the type of the value it refers to.</p></li>
-<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        </div>
+                        <li>
+                            <p class="fragment">The type of a variable is the type of the value it refers to.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> type(message)
 str
 >>> type(n)
@@ -328,53 +322,65 @@ int
 >>> type(pi)
 float
 </code></pre></div>
-	</ul>
-</section>
-<section>
-	<ul>
-		<li style="color:red"><p class="fragment">Note that $=$ means "assignment", not equation.</p></li>
-		<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li style="color:red">
+                            <p class="fragment">Note that $=$ means "assignment", not equation.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> x = 15
 >>> x = x + 10
 </code></pre></div>
-		<li><p class="fragment">Python is a Dynamically Typed Language. What is Dynamically Typed Language?</p> </li>
-				<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <li>
+                            <p class="fragment">Python is a Dynamically Typed Language. What is Dynamically Typed Language?</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> apple = 123 # apple is an integer
 >>> print(apple)
 123
 </code></pre></div>
-
-				<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> apple = 'ABC' # Now apple turns to be a string
 >>> print(apple)
 ABC
 </code></pre></div>
-<li><p class="fragment">We can assign the value of a variable to another variable.</p></li>
-<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <li>
+                            <p class="fragment">We can assign the value of a variable to another variable.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> a = 'ABC'
 >>> b = a
 >>> print(b)
 ABC
 </code></pre></div>
-	</ul>
-	
-</section>
-<section>
-	<h3>Variable name</h3>
-	<ul>
-		<li> <p class="fragment">Variable names can be arbitrarily long. They are case sensitive.</p></li>
-		<li> <p class="fragment">You <b>cannot</b> start with a number.</p></li>
-		<li><p class="fragment">It is common to use underscore character $\_$.</p></li>
-		<li><p class="fragment">Spaces are not allowed in variable names, but underscores can be used to separate words in variable names.</p></li>
-		<li>
-			<p class="fragment">Illegal name</p>
-		</li>
-	<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+                <section>
+                    <h3>Variable name</h3>
+                    <ul>
+                        <li>
+                            <p class="fragment">Variable names can be arbitrarily long. They are case sensitive.</p>
+                        </li>
+                        <li>
+                            <p class="fragment">You <b>cannot</b> start with a number.</p>
+                        </li>
+                        <li>
+                            <p class="fragment">It is common to use underscore character $\_$.</p>
+                        </li>
+                        <li>
+                            <p class="fragment">Spaces are not allowed in variable names, but underscores can be used to separate words in variable names.</p>
+                        </li>
+                        <li>
+                            <p class="fragment">Illegal name</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> 76trombones = 'big parade'
 SyntaxError: invalid syntax
 >>> more@ = 1000000
@@ -382,13 +388,13 @@ SyntaxError: invalid syntax
 >>> class = 'Advanced Theoretical Zymurgy'
 SyntaxError: invalid syntax
 </code></pre></div>
-		</ul>
-</section>
-<section>
-	<h3>Keywords</h3>
-	<p>You <b>cannot</b> use the following keyword as variable names since they have been reserved by Python to recognize the structure of the program.</p>
-		<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+                <section>
+                    <h3>Keywords</h3>
+                    <p>You <b>cannot</b> use the following keyword as variable names since they have been reserved by Python to recognize the structure of the program.</p>
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 and del from None True
 as elif global nonlocal try
 assert else if not while
@@ -397,87 +403,81 @@ class False in pass yield
 continue finally is raise
 def for lambda return
 </code></pre></div>
-</section>
-<section>
-	<p>You would be better to use recognizable names. Check the following names.</p>
-			<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                </section>
+                <section>
+                    <p>You would be better to use recognizable names. Check the following names.</p>
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 a = 35.0
 b = 12.50
 c = a * b
 print(c)
-</code></pre></div>		
-
-<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+</code></pre></div>
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 hours = 35.0
 rate = 12.50
 pay = hours * rate
 print(pay)
 </code></pre></div>
-
-<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 x1q3z9ahd = 35.0
 x1q3z9afd = 12.50
 x1q3p9afd = x1q3z9ahd * x1q3z9afd
 print(x1q3p9afd)
 </code></pre></div>
-<p class="fragment">Which ones are better?</p>
-</section>
-    </section>
-<section>
-	<section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.6 Operators, input and output</h2>
-	</section>
-<section>
-<ul>
-	<li>
-		<p class="fragment">Operatiors: $+,-,*,/,**(exponentiation)$</p>
-	</li>
-	<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    <p class="fragment">Which ones are better?</p>
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.6 Operators, input and output</h2>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <p class="fragment">Operatiors: $+,-,*,/,**(exponentiation)$</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> minute=50
 >>> minute/20
 2.5 #float
 </code></pre></div>
-
-	<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> minute=50
 >>> minute//20 
 2 #floored integer
 </code></pre></div>
-
-	<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> minute=50
 >>> minute%20 
 10 #remainder. This is useful!
 </code></pre></div>
-
-<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> student_number=2017003425
 >>> student_number//1000000
 2017 
 >>> student_number%10000
 3425
 </code></pre></div>
-	<li>
-		<p class="fragment">Order of operations</p>
-	</li>
-
-		
-</ul>
-
-</section>
-<section>
-<ul><li>
-		<p>String operations</p>
-	</li></ul>	
-	<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <li>
+                            <p class="fragment">Order of operations</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <p>String operations</p>
+                        </li>
+                    </ul>
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 >>> first=10
 >>> second=15
 >>> print(first+second)
@@ -487,44 +487,40 @@ print(x1q3p9afd)
 >>> print(first + second)
 100150
 </code></pre></div>
-		
-</section>
-<section>
-	<h3>Input and Output</h3>
-	<ul>
-		<li>
-			<p class="fragment">input() and print()</p>
-		</li>
-				<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                </section>
+                <section>
+                    <h3>Input and Output</h3>
+                    <ul>
+                        <li>
+                            <p class="fragment">input() and print()</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> input = input()
 Some silly stuff
 >>> print(input)
 Some silly stuff
 </code></pre></div>
-		<li>
-			<p class="fragment">You can pass a string to input to be displayed to the user before pausing for input:</p>
-		</li>
-		<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <li>
+                            <p class="fragment">You can pass a string to input to be displayed to the user before pausing for input:</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> name = input('What is your name?\n')
 What is your name?
 Chuck 
 >>> print(name)
 Chuck #The type is string.
 </code></pre></div>
-
-	</ul>
-
-</section>
-
-<section>
-	<ul>
-			<li>
-			<p class="fragment">If you expect the user to type an integer, you can try to convert the return value to integer using the int() function</p>
-		</li>
-				<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <p class="fragment">If you expect the user to type an integer, you can try to convert the return value to integer using the int() function</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> prompt = 'What...is the airspeed velocity of an unladen swallow?\n'
 >>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?
@@ -534,76 +530,68 @@ What...is the airspeed velocity of an unladen swallow?
 >>> int(speed) + 5
 22
 </code></pre></div>
-<li>
-	<p class="fragment">It may cause error, if the value cannot be converted.</p>
-</li>
-
-				<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                        <li>
+                            <p class="fragment">It may cause error, if the value cannot be converted.</p>
+                        </li>
+                        <div class="fragment">
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> speed = input(prompt)
 What...is the airspeed velocity of an unladen swallow?lao
 What do you mean, an African or a European swallow?
 >>> int(speed)
 ValueError: invalid literal for int() with base 10:
 </code></pre></div>
-</ul>
-
-</section>
-<section>
-					<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    </ul>
+                </section>
+                <section>
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 age = 23
 message = "Happy " + age + "rd Birthday!"
 print(message)
 </code></pre></div>
-
-					<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 Traceback (most recent call last):
 File "birthday.py", line 2, in <module>
 message = "Happy " + age + "rd Birthday!"
 TypeError: Can't convert 'int' object to str implicitly
 </code></pre></div>
-
-					<div class="fragment">
-<pre><code class="hljs" data-trim contenteditable >
+                    <div class="fragment">
+                        <pre><code class="line-numbers" data-trim contenteditable >
 age = 23
 message = "Happy " + str(age) + "rd Birthday!"
 print(message)
 
 Happy 23rd Birthday!
 </code></pre></div>
-
-</section>
-</section>
-
-<section>
-	<section data-background="#2980b9" style="color: white">
-<h2 style="color: white">1.7 Strings</h2>
-</section>
-<section>
-	Changing Case in a String with Methods
-				<div class="fragment">
-<div><pre><code class="hljs" data-trim contenteditable >
+                </section>
+            </section>
+            <section>
+                <section data-background="#2980b9" style="color: white">
+                    <h2 style="color: white">1.7 Strings</h2>
+                </section>
+                <section>
+                    Changing Case in a String with Methods
+                    <div class="fragment">
+                        <div><pre><code class="line-numbers" data-trim contenteditable >
 >>> name = "ada lovelace"
 >>> print(name.title())
 Ada Lovelace
-</code></pre></div>	
-
-<div><pre><code class="hljs" data-trim contenteditable >
+</code></pre></div>
+                        <div><pre><code class="line-numbers" data-trim contenteditable >
 name = "Ada Lovelace"
 print(name.upper())
 print(name.lower())
-</code></pre></div>	
-
-<div><pre><code class="hljs" data-trim contenteditable >
+</code></pre></div>
+                        <div><pre><code class="line-numbers" data-trim contenteditable >
 ADA LOVELACE
 ada lovelace
-</code></pre></div>	
-</section>
-<section>
-Combining or Concatenating Strings	
-	<div><pre><code class="hljs" data-trim contenteditable >
+</code></pre></div>
+                </section>
+                <section>
+                    Combining or Concatenating Strings
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 first_name = "ada"
 last_name = "lovelace"
 full_name = first_name + " " + last_name
@@ -611,27 +599,23 @@ print(full_name)
 
 ada lovelace
 </code></pre></div>
-
-	<div><pre><code class="hljs" data-trim contenteditable >
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 
 print("Hello, " + full_name.title() + "!")
 
 Hello, Ada Lovelace!
 </code></pre></div>
-
-	<div><pre><code class="hljs" data-trim contenteditable >
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 message = "Hello, " + full_name.title() + "!"
 print(message)
 </code></pre></div>
-</section>
-<section>
-Stripping Whitespace
-<ul>
-	<li>To programmers 'python' and 'python ' look pretty much the same. But to a program, they
-are two different strings. To ensure that no whitespace exists at the right end of a string, use
-the rstrip() method.</li>
-</ul>
-	<div><pre><code class="hljs" data-trim contenteditable >
+                </section>
+                <section>
+                    Stripping Whitespace
+                    <ul>
+                        <li>To programmers 'python' and 'python ' look pretty much the same. But to a program, they are two different strings. To ensure that no whitespace exists at the right end of a string, use the rstrip() method.</li>
+                    </ul>
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = 'python '
 >>> favorite_language
 'python '
@@ -640,25 +624,21 @@ the rstrip() method.</li>
 >>> favorite_language
 'python '
 </code></pre></div>
-<ul>
-	<li>However, it is only removed temporarily. To remove the whitespace from the string permanently, you have to
-store the stripped value back into the variable:</li>
-</ul>
-
-	
-</section>
-<section>
-		<div><pre><code class="hljs" data-trim contenteditable >
+                    <ul>
+                        <li>However, it is only removed temporarily. To remove the whitespace from the string permanently, you have to store the stripped value back into the variable:</li>
+                    </ul>
+                </section>
+                <section>
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = 'python '
 >>> favorite_language = favorite_language.rstrip()
 >>> favorite_language
 'python'
 </code></pre></div>
-<ul>
-	<li>You can also strip whitespace from the left side of a string using the
-lstrip() method or strip whitespace from both sides at once using strip():</li>
-</ul>
-		<div><pre><code class="hljs" data-trim contenteditable >
+                    <ul>
+                        <li>You can also strip whitespace from the left side of a string using the lstrip() method or strip whitespace from both sides at once using strip():</li>
+                    </ul>
+                    <div><pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = ' python '
 >>> favorite_language.rstrip()
 ' python'
@@ -667,172 +647,164 @@ lstrip() method or strip whitespace from both sides at once using strip():</li>
 >>> favorite_language.strip()
 'python'
 </code></pre></div>
+                </section>
+            </section>
+            <section>
+                <section data-background="#2c3e50" style="color: white; text-align: left;">
+                    <h2 style="color: white">Summary</h2>
+                    <ul>
+                        <li>Course intro</li>
+                        <li>Python intro</li>
+                        <li>Tips for programming</li>
+                        <li>Values, variables, operators, input and output, strings</li>
+                        <ul class="fragment">
+                            <li>Reading: Chapter 2 Debugging</li>
+                        </ul>
+                    </ul>
+                </section>
+            </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
 
-</section>
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
 
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.5,
 
-</section>
+            // Display controls in the bottom right corner
+            controls: true,
 
-<section>
-		<section data-background="#2c3e50" style="color: white; text-align: left;">
-<h2 style="color: white">Summary</h2>
-<ul>
-	<li>Course intro</li>
-	<li>Python intro</li>
-	<li>Tips for programming</li>
-	<li>Values, variables, operators, input and output, strings</li>
-	<ul class="fragment">
-	<li>Reading: Chapter 2 Debugging</li>
-</ul>
-</ul>
+            // Display a presentation progress bar
+            progress: true,
 
+            // Set default timing of 2 minutes per slide
+            defaultTiming: 120,
 
+            // Display the page number of the current slide
+            slideNumber: true,
 
-                    </section>
-</section>
+            // Push each slide change to the browser history
+            history: false,
 
-			</div>
-		</div>
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            // Enable the slide overview mode
+            overview: true,
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-                // The "normal" size of the presentation, aspect ratio will be preserved
-    // when the presentation is scaled to fit different resolutions. Can be
-    // specified using percentage units.
-    width: 960,
-    height: 700,
+            // Vertical centering of slides
+            center: true,
 
-    // Factor of the display size that should remain empty around the content
-    margin: 0.1,
+            // Enables touch navigation on devices with touch input
+            touch: true,
 
-    // Bounds for smallest/largest possible scale to apply to content
-    minScale: 0.2,
-    maxScale: 1.5,
+            // Loop the presentation
+            loop: false,
 
-				// Display controls in the bottom right corner
-	controls: true,
+            // Change the presentation direction to be RTL
+            rtl: false,
 
-	// Display a presentation progress bar
-	progress: true,
+            // Randomizes the order of slides each time the presentation loads
+            shuffle: false,
 
-	// Set default timing of 2 minutes per slide
-	defaultTiming: 120,
+            // Turns fragments on and off globally
+            fragments: true,
 
-	// Display the page number of the current slide
-	slideNumber: true,
+            // Flags if the presentation is running in an embedded mode,
+            // i.e. contained within a limited portion of the screen
+            embedded: false,
 
-	// Push each slide change to the browser history
-	history: false,
+            // Flags if we should show a help overlay when the questionmark
+            // key is pressed
+            help: true,
 
-	// Enable keyboard shortcuts for navigation
-	keyboard: true,
+            // Flags if speaker notes should be visible to all viewers
+            showNotes: false,
 
-	// Enable the slide overview mode
-	overview: true,
+            // Global override for autolaying embedded media (video/audio/iframe)
+            // - null: Media will only autoplay if data-autoplay is present
+            // - true: All media will autoplay, regardless of individual setting
+            // - false: No media will autoplay, regardless of individual setting
+            autoPlayMedia: null,
 
-	// Vertical centering of slides
-	center: true,
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
 
-	// Enables touch navigation on devices with touch input
-	touch: true,
+            // Stop auto-sliding after user input
+            autoSlideStoppable: true,
 
-	// Loop the presentation
-	loop: false,
+            // Use this method for navigation when auto-sliding
+            autoSlideMethod: Reveal.navigateNext,
 
-	// Change the presentation direction to be RTL
-	rtl: false,
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
 
-	// Randomizes the order of slides each time the presentation loads
-	shuffle: false,
+            // Hides the address bar on mobile devices
+            hideAddressBar: true,
 
-	// Turns fragments on and off globally
-	fragments: true,
+            // Opens links in an iframe preview overlay
+            previewLinks: false,
 
-	// Flags if the presentation is running in an embedded mode,
-	// i.e. contained within a limited portion of the screen
-	embedded: false,
+            // Transition style
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-	// Flags if we should show a help overlay when the questionmark
-	// key is pressed
-	help: true,
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
 
-	// Flags if speaker notes should be visible to all viewers
-	showNotes: false,
+            // Transition style for full page slide backgrounds
+            backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
-	// Global override for autolaying embedded media (video/audio/iframe)
-	// - null: Media will only autoplay if data-autoplay is present
-	// - true: All media will autoplay, regardless of individual setting
-	// - false: No media will autoplay, regardless of individual setting
-	autoPlayMedia: null,
+            // Number of slides away from the current that are visible
+            viewDistance: 3,
 
-	// Number of milliseconds between automatically proceeding to the
-	// next slide, disabled when set to 0, this value can be overwritten
-	// by using a data-autoslide attribute on your slides
-	autoSlide: 0,
+            // Parallax background image
+            parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-	// Stop auto-sliding after user input
-	autoSlideStoppable: true,
+            // Parallax background size
+            parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
 
-	// Use this method for navigation when auto-sliding
-	autoSlideMethod: Reveal.navigateNext,
+            // Number of pixels to move the parallax background per slide
+            // - Calculated automatically unless specified
+            // - Set to 0 to disable movement along an axis
+            parallaxBackgroundHorizontal: null,
+            parallaxBackgroundVertical: null,
 
-	// Enable slide navigation via mouse wheel
-	mouseWheel: false,
+            // The display mode that will be used to show slides
+            display: 'block',
 
-	// Hides the address bar on mobile devices
-	hideAddressBar: true,
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                // Zoom in and out with Alt+click
+                { src: 'plugin/zoom-js/zoom.js', async: true },
 
-	// Opens links in an iframe preview overlay
-	previewLinks: false,
+                // Speaker notes
+                { src: 'plugin/notes/notes.js', async: true },
 
-	// Transition style
-	transition: 'slide', // none/fade/slide/convex/concave/zoom
+                // MathJax
+                { src: 'plugin/math/math.js', async: true },
+                {src: 'plugin/line-numbers/line-numbers.js'}
+            ]
+        });
+        </script>
+</body>
 
-	// Transition speed
-	transitionSpeed: 'default', // default/fast/slow
-
-	// Transition style for full page slide backgrounds
-	backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-
-	// Number of slides away from the current that are visible
-	viewDistance: 3,
-
-	// Parallax background image
-	parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
-
-	// Parallax background size
-	parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
-
-	// Number of pixels to move the parallax background per slide
-	// - Calculated automatically unless specified
-	// - Set to 0 to disable movement along an axis
-	parallaxBackgroundHorizontal: null,
-	parallaxBackgroundVertical: null,
-
-	// The display mode that will be used to show slides
-	display: 'block',
-
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					// Zoom in and out with Alt+click
-		            { src: 'plugin/zoom-js/zoom.js', async: true },
-
-		            // Speaker notes
-					{ src: 'plugin/notes/notes.js', async: true },
-
-					// MathJax
-					{ src: 'plugin/math/math.js', async: true }
-				]
-			});
-		</script>
-	</body>
 </html>
