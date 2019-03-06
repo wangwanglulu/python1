@@ -70,8 +70,8 @@
                 <section>
                     <h3>课程要求</h3>
                     <ol>
-                        <li>每两周一次作业（3%*8=24%）</li>
-                        <li>案例设计 （6%）</li>
+                        <li>每两周一次作业（3%*7=21%）</li>
+                        <li>案例设计 （9%）</li>
                         <li>期末考试 （60%）</li>
                         <li>出勤率 (10%)，课堂参与（Bonus）</li>
                         <li>答疑时间，网上论坛github</li>
@@ -97,7 +97,8 @@
                     <h3>课件从哪里获取？</h3>
                     <ul>
                         <li>我的网站：<a href="https://wangwanglulu.coding.me">wangwanglulu.coding.me</a></li>
-                        <li>如果你一定要Pdf文件：在网址末尾加上?print-pdf，然后ctrl+p</li>
+                        <li>如果你需要Pdf文件：在网址末尾加上?print-pdf，然后ctrl+p</li>
+                        <li>或者在BB系统上下载</li>
                     </ul>
                 </section>
             </section>
@@ -126,15 +127,21 @@
                     <ul>
                         <li>请使用Python 3.x (很多教材是2.x版本)</li>
                         <li><a href="https://www.anaconda.com/download/">Anaconda</a>，两种模式</li>
-                        <li class="fragment">实际演示：第一个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
+                        <li class="fragment">实际演示：第一个Python程序
+                            <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 print("Hello, world!")
-            </code></pre></li>
-                        <li class="fragment">第二个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
+            </code></pre>
+                        </li>
+                        <li class="fragment">第二个Python程序
+                            <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 import antigravity
-            </code></pre></li>
-                        <li class="fragment">第三个Python程序<pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
+            </code></pre>
+                        </li>
+                        <li class="fragment">第三个Python程序
+                            <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 import this
-            </code></pre></li>
+            </code></pre>
+                        </li>
                     </ul>
                 </section>
             </section>
@@ -271,13 +278,16 @@ Python.
                         <p>Tab</p>
                         <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('I\'m learning\tPython.')
-I'm learning	Python.
-</code></pre></div>
-                    <div class="fragment"><pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
+I'm learning    Python.
+</code></pre>
+                    </div>
+                    <div class="fragment">
+                        <pre style="font-size: 0.77em"><code class="line-numbers" data-trim contenteditable >
 >>> print('\\\n\\')
 >>> print('\\\t\\')
 >>> print(r'\\\t\\')
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
             </section>
             <section>
@@ -321,7 +331,8 @@ str
 int
 >>> type(pi)
 float
-</code></pre></div>
+</code></pre>
+                        </div>
                     </ul>
                 </section>
                 <section>
@@ -333,7 +344,8 @@ float
                             <pre><code class="line-numbers" data-trim contenteditable >
 >>> x = 15
 >>> x = x + 10
-</code></pre></div>
+</code></pre>
+                        </div>
                         <li>
                             <p class="fragment">Python is a Dynamically Typed Language. What is Dynamically Typed Language?</p>
                         </li>
@@ -342,13 +354,15 @@ float
 >>> apple = 123 # apple is an integer
 >>> print(apple)
 123
-</code></pre></div>
+</code></pre>
+                        </div>
                         <div class="fragment">
                             <pre><code class="line-numbers" data-trim contenteditable >
 >>> apple = 'ABC' # Now apple turns to be a string
 >>> print(apple)
 ABC
-</code></pre></div>
+</code></pre>
+                        </div>
                         <li>
                             <p class="fragment">We can assign the value of a variable to another variable.</p>
                         </li>
@@ -358,7 +372,8 @@ ABC
 >>> b = a
 >>> print(b)
 ABC
-</code></pre></div>
+</code></pre>
+                        </div>
                     </ul>
                 </section>
                 <section>
@@ -387,7 +402,8 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax
 >>> class = 'Advanced Theoretical Zymurgy'
 SyntaxError: invalid syntax
-</code></pre></div>
+</code></pre>
+                        </div>
                     </ul>
                 </section>
                 <section>
@@ -402,7 +418,8 @@ break except import or with
 class False in pass yield
 continue finally is raise
 def for lambda return
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
                 <section>
                     <p>You would be better to use recognizable names. Check the following names.</p>
@@ -412,21 +429,24 @@ a = 35.0
 b = 12.50
 c = a * b
 print(c)
-</code></pre></div>
+</code></pre>
+                    </div>
                     <div class="fragment">
                         <pre><code class="line-numbers" data-trim contenteditable >
 hours = 35.0
 rate = 12.50
 pay = hours * rate
 print(pay)
-</code></pre></div>
+</code></pre>
+                    </div>
                     <div class="fragment">
                         <pre><code class="line-numbers" data-trim contenteditable >
 x1q3z9ahd = 35.0
 x1q3z9afd = 12.50
 x1q3p9afd = x1q3z9ahd * x1q3z9afd
 print(x1q3p9afd)
-</code></pre></div>
+</code></pre>
+                    </div>
                     <p class="fragment">Which ones are better?</p>
                 </section>
             </section>
@@ -444,19 +464,22 @@ print(x1q3p9afd)
 >>> minute=50
 >>> minute/20
 2.5 #float
-</code></pre></div>
+</code></pre>
+                        </div>
                         <div class="fragment">
                             <pre><code class="line-numbers" data-trim contenteditable >
 >>> minute=50
 >>> minute//20 
 2 #floored integer
-</code></pre></div>
+</code></pre>
+                        </div>
                         <div class="fragment">
                             <pre><code class="line-numbers" data-trim contenteditable >
 >>> minute=50
 >>> minute%20 
 10 #remainder. This is useful!
-</code></pre></div>
+</code></pre>
+                        </div>
                         <div class="fragment">
                             <pre><code class="line-numbers" data-trim contenteditable >
 >>> student_number=2017003425
@@ -464,7 +487,8 @@ print(x1q3p9afd)
 2017 
 >>> student_number%10000
 3425
-</code></pre></div>
+</code></pre>
+                        </div>
                         <li>
                             <p class="fragment">Order of operations</p>
                         </li>
@@ -486,7 +510,8 @@ print(x1q3p9afd)
 >>> second='150'
 >>> print(first + second)
 100150
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
                 <section>
                     <h3>Input and Output</h3>
@@ -500,7 +525,8 @@ print(x1q3p9afd)
 Some silly stuff
 >>> print(input)
 Some silly stuff
-</code></pre></div>
+</code></pre>
+                        </div>
                         <li>
                             <p class="fragment">You can pass a string to input to be displayed to the user before pausing for input:</p>
                         </li>
@@ -511,7 +537,8 @@ What is your name?
 Chuck 
 >>> print(name)
 Chuck #The type is string.
-</code></pre></div>
+</code></pre>
+                        </div>
                     </ul>
                 </section>
                 <section>
@@ -529,7 +556,8 @@ What...is the airspeed velocity of an unladen swallow?
 17
 >>> int(speed) + 5
 22
-</code></pre></div>
+</code></pre>
+                        </div>
                         <li>
                             <p class="fragment">It may cause error, if the value cannot be converted.</p>
                         </li>
@@ -540,7 +568,8 @@ What...is the airspeed velocity of an unladen swallow?lao
 What do you mean, an African or a European swallow?
 >>> int(speed)
 ValueError: invalid literal for int() with base 10:
-</code></pre></div>
+</code></pre>
+                        </div>
                     </ul>
                 </section>
                 <section>
@@ -549,14 +578,16 @@ ValueError: invalid literal for int() with base 10:
 age = 23
 message = "Happy " + age + "rd Birthday!"
 print(message)
-</code></pre></div>
+</code></pre>
+                    </div>
                     <div class="fragment">
                         <pre><code class="line-numbers" data-trim contenteditable >
 Traceback (most recent call last):
 File "birthday.py", line 2, in <module>
 message = "Happy " + age + "rd Birthday!"
 TypeError: Can't convert 'int' object to str implicitly
-</code></pre></div>
+</code></pre>
+                    </div>
                     <div class="fragment">
                         <pre><code class="line-numbers" data-trim contenteditable >
 age = 23
@@ -564,7 +595,8 @@ message = "Happy " + str(age) + "rd Birthday!"
 print(message)
 
 Happy 23rd Birthday!
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
             </section>
             <section>
@@ -574,48 +606,61 @@ Happy 23rd Birthday!
                 <section>
                     Changing Case in a String with Methods
                     <div class="fragment">
-                        <div><pre><code class="line-numbers" data-trim contenteditable >
+                        <div>
+                            <pre><code class="line-numbers" data-trim contenteditable >
 >>> name = "ada lovelace"
 >>> print(name.title())
 Ada Lovelace
-</code></pre></div>
-                        <div><pre><code class="line-numbers" data-trim contenteditable >
+</code></pre>
+                        </div>
+                        <div>
+                            <pre><code class="line-numbers" data-trim contenteditable >
 name = "Ada Lovelace"
 print(name.upper())
 print(name.lower())
-</code></pre></div>
-                        <div><pre><code class="line-numbers" data-trim contenteditable >
+</code></pre>
+                        </div>
+                        <div>
+                            <pre><code class="line-numbers" data-trim contenteditable >
 ADA LOVELACE
 ada lovelace
-</code></pre></div>
+</code></pre>
+                        </div>
                 </section>
                 <section>
                     Combining or Concatenating Strings
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 first_name = "ada"
 last_name = "lovelace"
 full_name = first_name + " " + last_name
 print(full_name)
 
 ada lovelace
-</code></pre></div>
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+</code></pre>
+                    </div>
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 
 print("Hello, " + full_name.title() + "!")
 
 Hello, Ada Lovelace!
-</code></pre></div>
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+</code></pre>
+                    </div>
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 message = "Hello, " + full_name.title() + "!"
 print(message)
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
                 <section>
                     Stripping Whitespace
                     <ul>
                         <li>To programmers 'python' and 'python ' look pretty much the same. But to a program, they are two different strings. To ensure that no whitespace exists at the right end of a string, use the rstrip() method.</li>
                     </ul>
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = 'python '
 >>> favorite_language
 'python '
@@ -623,22 +668,26 @@ print(message)
 'python'
 >>> favorite_language
 'python '
-</code></pre></div>
+</code></pre>
+                    </div>
                     <ul>
                         <li>However, it is only removed temporarily. To remove the whitespace from the string permanently, you have to store the stripped value back into the variable:</li>
                     </ul>
                 </section>
                 <section>
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = 'python '
 >>> favorite_language = favorite_language.rstrip()
 >>> favorite_language
 'python'
-</code></pre></div>
+</code></pre>
+                    </div>
                     <ul>
                         <li>You can also strip whitespace from the left side of a string using the lstrip() method or strip whitespace from both sides at once using strip():</li>
                     </ul>
-                    <div><pre><code class="line-numbers" data-trim contenteditable >
+                    <div>
+                        <pre><code class="line-numbers" data-trim contenteditable >
 >>> favorite_language = ' python '
 >>> favorite_language.rstrip()
 ' python'
@@ -646,7 +695,8 @@ print(message)
 'python '
 >>> favorite_language.strip()
 'python'
-</code></pre></div>
+</code></pre>
+                    </div>
                 </section>
             </section>
             <section>
@@ -663,148 +713,151 @@ print(message)
                     </ul>
                 </section>
             </section>
-            </div>
         </div>
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
-        <script>
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            // The "normal" size of the presentation, aspect ratio will be preserved
-            // when the presentation is scaled to fit different resolutions. Can be
-            // specified using percentage units.
-            width: 960,
-            height: 700,
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 960,
+        height: 700,
 
-            // Factor of the display size that should remain empty around the content
-            margin: 0.1,
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
 
-            // Bounds for smallest/largest possible scale to apply to content
-            minScale: 0.2,
-            maxScale: 1.5,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5,
 
-            // Display controls in the bottom right corner
-            controls: true,
+        // Display controls in the bottom right corner
+        controls: true,
 
-            // Display a presentation progress bar
-            progress: true,
+        // Display a presentation progress bar
+        progress: true,
 
-            // Set default timing of 2 minutes per slide
-            defaultTiming: 120,
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
 
-            // Display the page number of the current slide
-            slideNumber: true,
+        // Display the page number of the current slide
+        slideNumber: true,
 
-            // Push each slide change to the browser history
-            history: false,
+        // Push each slide change to the browser history
+        history: false,
 
-            // Enable keyboard shortcuts for navigation
-            keyboard: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
 
-            // Enable the slide overview mode
-            overview: true,
+        // Enable the slide overview mode
+        overview: true,
 
-            // Vertical centering of slides
-            center: true,
+        // Vertical centering of slides
+        center: true,
 
-            // Enables touch navigation on devices with touch input
-            touch: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
 
-            // Loop the presentation
-            loop: false,
+        // Loop the presentation
+        loop: false,
 
-            // Change the presentation direction to be RTL
-            rtl: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
 
-            // Randomizes the order of slides each time the presentation loads
-            shuffle: false,
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
 
-            // Turns fragments on and off globally
-            fragments: true,
+        // Turns fragments on and off globally
+        fragments: true,
 
-            // Flags if the presentation is running in an embedded mode,
-            // i.e. contained within a limited portion of the screen
-            embedded: false,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
 
-            // Flags if we should show a help overlay when the questionmark
-            // key is pressed
-            help: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
 
-            // Flags if speaker notes should be visible to all viewers
-            showNotes: false,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
 
-            // Global override for autolaying embedded media (video/audio/iframe)
-            // - null: Media will only autoplay if data-autoplay is present
-            // - true: All media will autoplay, regardless of individual setting
-            // - false: No media will autoplay, regardless of individual setting
-            autoPlayMedia: null,
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
 
-            // Number of milliseconds between automatically proceeding to the
-            // next slide, disabled when set to 0, this value can be overwritten
-            // by using a data-autoslide attribute on your slides
-            autoSlide: 0,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
 
-            // Stop auto-sliding after user input
-            autoSlideStoppable: true,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
 
-            // Use this method for navigation when auto-sliding
-            autoSlideMethod: Reveal.navigateNext,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
 
-            // Enable slide navigation via mouse wheel
-            mouseWheel: false,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
 
-            // Hides the address bar on mobile devices
-            hideAddressBar: true,
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
 
-            // Opens links in an iframe preview overlay
-            previewLinks: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
 
-            // Transition style
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-            // Transition speed
-            transitionSpeed: 'default', // default/fast/slow
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
 
-            // Transition style for full page slide backgrounds
-            backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
-            // Number of slides away from the current that are visible
-            viewDistance: 3,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
-            // Parallax background image
-            parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-            // Parallax background size
-            parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
 
-            // Number of pixels to move the parallax background per slide
-            // - Calculated automatically unless specified
-            // - Set to 0 to disable movement along an axis
-            parallaxBackgroundHorizontal: null,
-            parallaxBackgroundVertical: null,
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
 
-            // The display mode that will be used to show slides
-            display: 'block',
+        // The display mode that will be used to show slides
+        display: 'block',
+        math: {
+            mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+            config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            // Zoom in and out with Alt+click
+            { src: 'plugin/zoom-js/zoom.js', async: true },
 
-            dependencies: [
-                { src: 'plugin/markdown/marked.js' },
-                { src: 'plugin/markdown/markdown.js' },
-                { src: 'plugin/notes/notes.js', async: true },
-                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                // Zoom in and out with Alt+click
-                { src: 'plugin/zoom-js/zoom.js', async: true },
+            // Speaker notes
+            { src: 'plugin/notes/notes.js', async: true },
 
-                // Speaker notes
-                { src: 'plugin/notes/notes.js', async: true },
-
-                // MathJax
-                { src: 'plugin/math/math.js', async: true },
-                {src: 'plugin/line-numbers/line-numbers.js'}
-            ]
-        });
-        </script>
+            // MathJax
+            { src: 'plugin/math/math.js', async: true },
+            { src: 'plugin/line-numbers/line-numbers.js' }
+        ]
+    });
+    </script>
 </body>
 
 </html>
